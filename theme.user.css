@@ -1,25 +1,25 @@
 /* ==UserStyle==
-@name           Scratch 3 to 2
-@namespace      https://github.com/gliczide/Scratch-2.1/
-@supportURL     https://github.com/gliczide/Scratch-2.1/pulls
-@updateURL      https://github.com/gliczide/Scratch-2.1/theme.user.css
+@name           Scratch-www
+@namespace      https://github.com/medlans/Scratch-www
+@supportURL     https://github.com/medlans/Scratch-www/pulls
+@updateURL      https://github.com/medlans/Scratch-www/theme.user.css
 @version        0.9.8
 @license        Apache License 2.0
-@description    Reverts 3.0 pages into 2.0!
+@description    Makes scratch-www pages look like scratchr2 :D
 @author         gliczide <gliczide@gmail.com> (https://txti.es/gliczide)
 @preprocessor   stylus
 
 @var checkbox header 'Header (2013-early 2016)' 1
-@var checkbox homepage 'Homepage (2013)' 0
-@var checkbox logo 'Padding logo header (2013)' 0
-@var checkbox avatar 'Padding avatar in studio comments (2013)' 0
-@var checkbox studio 'Big title Project+Studio size (2014-2018)' 1
-@var checkbox texts 'Texts Before (English Only)' 0
+@var checkbox homepage 'Homepage (2013)' 1
+@var checkbox logo 'Padding logo header (2013)' 1
+@var checkbox avatar 'Padding avatar in studio comments (2013)' 1
+@var checkbox studio 'Big title Project+Studio size (2014-2018)' 0
+@var checkbox texts 'Texts Before (English Only)' 1
 @var checkbox improved 'Bit improved buttons in studio' 1
-@var checkbox features 'Featured text (Apr 2013 - Jul 2013)' 0
+@var checkbox features 'Featured text (Apr 2013 - Jul 2013)' 1
 @var checkbox early 'Alpha 2.0' 0
 ==/UserStyle== */
-@-moz-document domain("scratch.mit.edu") {
+@-moz-document domain("scratch.mit.edu"), domain("playcodepony.com") {
 /*2013 padding logo*/
 if logo {
 #navigation .logo {
@@ -56,11 +56,11 @@ button.button.action-button.report-button::after {
 button.button.action-button.copy-link-button, button.button.action-button.studio-button {
     font-size: 0 !important; }
 button.button.action-button.copy-link-button::after {
-    content: "Embed";
+    content: "Share to";
     font-size: 13px;
     line-height: 23px; }
 button.button.action-button.studio-button::after {
-    content: "Studios";
+    content: "Add to";
     font-size: 13px;
     line-height: 23px; }
 button.button.action-button {
